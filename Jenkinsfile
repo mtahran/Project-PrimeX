@@ -1,15 +1,15 @@
 pipeline {
     agent any
-    // parameters {
-    // //     choice(
-    // //         choices: ['apply', 'destroy'],
-    // //         description: 'Test choice',
-    // //         name: 'SELECT_CHOICE'
-    // //     )
-    // // }
-    // options {
-    //   ansiColor('xterm')
+    parameters {
+    //     choice(
+    //         choices: ['apply', 'destroy'],
+    //         description: 'Test choice',
+    //         name: 'SELECT_CHOICE'
+    //     )
     // }
+    options {
+      ansiColor('xterm')
+    }
     stages {
         stage('init') {
             steps {
