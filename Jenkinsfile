@@ -1,12 +1,12 @@
 pipeline {
     agent any
     parameters {
-    //     choice(
-    //         choices: ['apply', 'destroy'],
-    //         description: 'Test choice',
-    //         name: 'SELECT_CHOICE'
-    //     )
-    // }
+        choice(
+            choices: ['apply', 'destroy'],
+            description: 'Test choice',
+            name: 'SELECT_CHOICE'
+        )
+    }
     options {
       ansiColor('xterm')
     }
